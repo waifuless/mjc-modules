@@ -1,0 +1,15 @@
+plugins {
+    id 'by.mjc.java-common-conventions'
+    id 'application'
+}
+
+group 'by.mjc'
+version '1.3.5'
+
+dependencies {
+    implementation project(':core')
+}
+
+application {
+    mainClass = 'by.mjc.module1.api.App'
+}
