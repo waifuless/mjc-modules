@@ -5,6 +5,12 @@ plugins {
 group 'by.mjc'
 version '1.3.5'
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
+
 repositories {
     mavenCentral()
 }
