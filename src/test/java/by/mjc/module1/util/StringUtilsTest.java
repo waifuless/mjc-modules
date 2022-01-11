@@ -28,7 +28,7 @@ class StringUtilsTest {
                 Arguments.of("0.1", true),
                 Arguments.of("234", true),
                 Arguments.of("123", true),
-                Arguments.of("+123", true),
+                Arguments.of("+123", false),
                 Arguments.of("1", true),
                 Arguments.of("123.123", true),
                 Arguments.of("", false),
@@ -40,8 +40,9 @@ class StringUtilsTest {
                 Arguments.of("0", false),
                 Arguments.of("+0", false),
                 Arguments.of("-0", false),
-                Arguments.of("09", false),
-                Arguments.of("-09", false)
+                Arguments.of("09", true),
+                Arguments.of("-09", false),
+                Arguments.of("0xF", false)
         );
     }
 }

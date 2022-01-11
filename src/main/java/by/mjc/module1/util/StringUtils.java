@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 public class StringUtils {
 
     public static boolean isPositiveNumber(String str) {
-        return NumberUtils.isCreatable(str)
+        return NumberUtils.isParsable(str)
                 && new BigDecimal(str).compareTo(BigDecimal.ZERO) > 0;
     }
 }
