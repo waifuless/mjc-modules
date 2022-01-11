@@ -6,6 +6,5 @@ group 'by.mjc'
 version '1.3.5'
 
 dependencies {
-    implementation 'org.apache.commons:commons-lang3:3.10'
-    implementation name: 'utils-1.3.5'
+    implementation 'by.mjc:utils:1.3.5'
 }

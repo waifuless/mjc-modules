@@ -10,7 +10,5 @@ java {
 
 repositories {
     mavenCentral()
-    flatDir {
-        dirs "${project(':core').projectDir}/libs"
-    }
+    mavenLocal()
 }
